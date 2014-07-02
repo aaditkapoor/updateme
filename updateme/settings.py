@@ -65,11 +65,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'updateme',
-        'USER': 'root',
-        'PASSWORD': 'silverjk',
+        'USER': 'adminJemln2Z',
+        'PASSWORD': 'aQjhAf6dwv8j',
     }
 }
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
