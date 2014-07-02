@@ -1,0 +1,57 @@
+<html>
+<title>
+    Welcome to Updateme!
+</title>
+<h1><b><u><i>Welcome to Updateme! Enjoy your visit here!</i></u></b></h1>
+<br>
+<b><u>The date is {{ date }}</u></b>
+<br>
+<br>
+<a href="/blog/latest/"> <b>Access latest blogs: </b></a>
+<br>
+<br>
+<div class="intro">
+    <font face = 'comic sans ms' color = 'blue'>
+    <b>
+        <i>Updateme</i> allows people to share their thoughts with unknown people. Here people can write anything, their experiences, and about them. <br>
+        Updateme is completely free of cost and the best part, it is Open Source! <br>
+    </b>
+        </font>
+</div>
+<br>
+<hr>
+<div class  = 'search'>
+    <b><u>Search a section: </u></b>
+    <form action = '/search_section/' method="get">
+        <input type = 'search' name = 'q_section'>
+        <br>
+        <input type = 'submit' value = 'Search section!'>
+        <br>
+    </form>
+    <br>
+    <b><u>Search an author: </u></b>
+    <form action = '/search_author/' method = 'get'>
+        <input type = 'search' name = 'q_author'>
+        <br>
+        <input type = 'submit' value = 'Search author'>
+        <br>
+    </form>
+    <b><u>Search a blog: </u></b>
+    <form action = '/search_blog/'>
+        <br>
+        <input type="search" name = 'q_blog'>
+        <br>
+        <input type = 'submit'>
+    </form>
+</div>
+<br>
+<a href = '/blog/'><b><u><i>Explore the blog section</i></u></b></a>
+<br>
+<br>
+<a href = '/help/'><b><u><i>Explore the help section</i></u></b></a>
+<br>
+<br>
+<a href = '/contact/'><b><i><u>Contact us!</u></i></b></a>
+<br>
+<hr>
+</html>

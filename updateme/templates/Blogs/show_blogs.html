@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Show My blogs</title>
+</head>
+<body>
+<h1><u><i>Welcome to Show My blogs page!</i></u></h1>
+<br>
+<b> <u><h2>Showing blogs of {{ user }}</h2></u></b>
+<br>
+{% for d in blogs %}
+<b> {{ d.author }} </b>
+<br>
+<b>{{ d.blog }}</b>
+<br>
+<b> BLOG ID: {{ d.unique_key }}</b>
+{% endfor %}
+</body>
+</html>

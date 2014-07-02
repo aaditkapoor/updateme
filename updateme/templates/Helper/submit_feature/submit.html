@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Request a new feature</title>
+</head>
+<body>
+<h3><u>Request a new feature</u></h3>
+<br>
+
+<form action = '{% url 'Helper.views.process_feature' %}' method = 'post'>
+    {% csrf_token %}
+    Your name: <input type = 'text' name = 'name'>
+    <br>
+    Your feature (Minimum Words): <input type = 'text' name = 'feature'>
+    <br>
+    <input type = 'submit' value = 'Request!'>
+</form>
+
+</body>
+</html>

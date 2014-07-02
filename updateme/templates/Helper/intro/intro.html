@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Introduction</title>
+</head>
+<body>
+	{% load staticfiles %}
+<h3><u>Welcome to Introduction!</u></h3>
+    <h3>This is the basic intro. Please watch the videos to get a basic understanding</h3>
+<br>
+<b><u><i>How to add a blog?</i></u></b>
+    <br>
+    <video width="600" height="300" controls>
+  <source src="{% static 'Help/intro.ogg' %}" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<br>
+<b><u><i>How to view a blog?</i></u></b>
+    <br>
+    <video width="600" height="300" controls>
+  <source src="{% static 'view_blog.ogg' %}" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+<body>
+<b><i><u><strong><h1>Search results for {{ search_item }}</h1></strong></u></i></b>
+<br>
+{% if status %}
+  <b>Author {{ search_item }}: Found! <u> <a href = '/blog/show_by_user/{{ search_item }}'> Show blogs of {{ search_item }}</a>
+{% else %}
+ <b> Author {{ search_item }}: Not found!</b>
+{% endif %}
+
+<form action = '/'>
+    <input type = 'submit' value = 'Go back!'>
+    <br>
+</form>
+</body>
+</html>

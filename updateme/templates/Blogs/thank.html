@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Thank you!</title>
+</head>
+<body>
+<h1>
+    <u>
+        <i>
+            Thank you <i>{{ name }}</i>! Your blog will appear on the latest blog page after sometime.
+            <br>
+        </i>
+    </u>
+</h1>
+<br>
+<ul>
+
+    <li><a href="/">Updateme home</a></li> <br>
+    <li><a href = '{% url 'Blogs.views.home' %}'>Add another blog!</a></li>
+    <li><a href = '/blog/latest/'>Latest blogs</a></li>
+</ul>
+</body>
+</html>

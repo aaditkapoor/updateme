@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Latest Blogs</title>
+</head>
+<body>
+
+<marquee><a href="/">UPDATEME HOME</a></marquee>
+<br>
+<script type = 'text/javascript'>
+    function direct() {
+        window.location.assign('/blog/most_liked/');
+    }
+</script>
+{% if status %}
+   <button onclick="direct()">Most liked blogs</button>
+ {% for d in data %}
+<ul>
+    <b><u>Blog id: {{ d.unique_key }}</u></b>
+    <br>
+    <br>
+    <li><u><b>Date posted: {{ d.date }}</b></u></li>
+    <br>
+    <b><u>Author: {{ d.author }}</u></b>
+    <br>
+    <b>Blog : {{ d.blog }}</b>
+    <br>
+    <form action = '{% url 'Blogs.views.like' %}'>
+    <input type = 'submit' value = 'Like this Blog'>
+    <input type = 'hidden' name = 'blog_id' value = '{{ d.unique_key }}'>
+    </form>
+
+    <br>
+    <b>Likes: {{ d.get_likes  }}</b>
+    <hr>
+</ul>
+{% endfor %}
+{% else %}
+<b> NO DATA! <a href = '/blog/'>Add some</a></b>
+{% endif %}
+<hr>
+<b><i><u> &copy; COPYRIGHT 2014 Aadit Kapoor</u></i></b>
+</body>
+</html>
